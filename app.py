@@ -17,16 +17,21 @@ from pathlib import Path
 
 warnings.filterwarnings("ignore")
 
-# ── Path setup ────────────────────────────────────────────────────────────────
-APP_DIR  = Path(__file__).resolve().parent
-ROOT     = APP_DIR.parent
-SRC_DIR  = ROOT / "src"
+# ── Path setup ─────────────────────────────────────────────
+APP_DIR = Path(__file__).resolve().parent
+ROOT = APP_DIR
+
+SRC_DIR = ROOT / "src"
 DATA_DIR = ROOT / "data"
 MODELS_DIR = ROOT / "models"
 PRED_DIR = ROOT / "outputs" / "predictions"
 
-sys.path.insert(0, str(SRC_DIR))
+# Root-level modules such as model_training.py
+sys.path.insert(0, str(ROOT))
 
+# Optional source directory for modules stored in src/
+if SRC_DIR.is_dir():
+    sys.path.insert(0, str(SRC_DIR))
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Credit Churn Intelligence",
