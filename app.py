@@ -205,7 +205,7 @@ with st.sidebar:
     st.markdown("**Threshold**: 0.554")
     st.markdown("**Test ROC-AUC**: 0.9932")
     st.markdown("---")
-    st.markdown("<small style='color:#475569'>Credit Churn Intelligence v1.0<br>Shyam Faldu — IBM SkillsBuild Internship</small>", unsafe_allow_html=True)
+    st.markdown("<small style='color:#475569'>Credit Churn Intelligence v1.0<br>Apeksha Bhushan — IBM SkillsBuild Internship</small>", unsafe_allow_html=True)
 
 
 # ── Load artifacts ─────────────────────────────────────────────────────────────
@@ -757,7 +757,7 @@ elif page == "Retention Strategy":
 st.markdown("---")
 st.markdown(
     "<div style='text-align:center;color:#94a3b8;font-size:0.78rem;'>"
-    "Credit Churn Intelligence &nbsp;|&nbsp; Shyam Faldu &nbsp;|&nbsp; IBM SkillsBuild Data Analytics with AI Internship"
+    "Credit Churn Intelligence &nbsp;|&nbsp; Apeksha Bhushan &nbsp;|&nbsp; IBM SkillsBuild Data Analytics with AI Internship"
     "</div>",
     unsafe_allow_html=True,
 )
