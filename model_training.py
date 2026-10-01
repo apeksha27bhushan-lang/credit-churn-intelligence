@@ -27,7 +27,7 @@ from xgboost import XGBClassifier
 
 RANDOM_SEED = 42
 TEST_SIZE = 0.20
-MODELS_DIR = Path(__file__).resolve().parent.parent / "models"
+MODELS_DIR = Path(__file__).resolve().parent / "models"
 
 
 def build_preprocessor(categorical_features: list, numerical_features: list):
